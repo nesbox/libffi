@@ -14,10 +14,10 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with DejaGnu; if not, write to the Free Software Foundation,
-# Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+# Inc., 51 Franklin Street, Fifth Floor, MA 02110, USA.
 
 # This is a list of toolchains that are supported on this board.
-set_board_info target_install {powerpc-eabisim}
+set_board_info target_install {m32r-elf}
 
 # Load the generic configuration for this board. This will define a basic set
 # of routines needed by the tool to communicate with the board.
@@ -26,8 +26,8 @@ load_generic_config "sim"
 # basic-sim.exp is a basic description for the standard Cygnus simulator.
 load_base_board_description "basic-sim"
 
-# "powerpc" is the name of the sim subdir in devo/sim.
-setup_sim powerpc
+# "m32r" is the name of the sim subdir in devo/sim.
+setup_sim m32r
 
 # No multilib options needed by default.
 process_multilib_options ""

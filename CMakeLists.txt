@@ -6,7 +6,8 @@ set(SOURCES_LIST
     src/java_raw_api
     src/prep_cif.c
     src/raw_api.c
-    src/types.c)
+    src/types.c
+    src/tramp.c)
 
 if(CMAKE_BUILD_TYPE MATCHES DEBUG)
     list(APPEND SOURCES_LIST src/debug.c)
